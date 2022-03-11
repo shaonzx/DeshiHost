@@ -1,3 +1,58 @@
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+}
+
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+
 body {
-  background: gold;
+  font-family: Inter, Arial, Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+  line-height: 1.5;
+  color: var(--color-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* 1x font size of the html element*/
+/* 1rem = 10 px due to the calculation set to html element*/
+/* This makes calculation easier */
+h1 {
+  font-size: 7 rem;
+}
+h2 {
+  font-size: 4 rem;
+}
+h3 {
+  font-size: 3 rem;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
 }
